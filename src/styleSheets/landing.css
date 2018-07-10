@@ -21,6 +21,7 @@ html {
 ::selection {
     background: #b3d4fc;
     text-shadow: none;
+    
 }
 
 hr {
@@ -77,6 +78,11 @@ body {
     color: #fff;
     position: relative;
 }
+#loading{
+    z-index: 10;
+    background-image: url("../assets/up.png");
+    
+}
 #intro-main {
     width: 100%;
     height: 100vh;
@@ -84,11 +90,42 @@ body {
     text-align: center;
     /* color: #fff; */
     position: fixed;
-    background-image: url("../assets/free-vector-modern-city_093317_bluecity.jpg");
     overflow: hidden;
-    background-size: cover;
     background-position: center;
     filter:blur(0px);
+    
+}
+.main-background1{
+    overflow-x: hidden;
+    width: 100vmax;
+    position: fixed;
+    align-self: center;
+    margin-right: 0;
+    margin-left: 0;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0px);
+    /* background-image: url("../assets/free-vector-modern-city_093317_bluecity.jpg"); */
+}
+.main-background2{
+    width: 90%;
+    width: 100vmax;
+    position: fixed;
+    align-self: center;
+    overflow: hidden;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(0px);
+    /* background-image: url("../assets/free-vector-modern-city_093317_bluecity.jpg"); */
+}
+.changeBackground{
+    opacity: 1;
+    background-size: 100% 100%;    
+    background-image: url("../assets/anim.svg");
 }
 #intro1{
     width: 100%;
@@ -113,19 +150,15 @@ h2 {
     margin-top: 0;
     text-align: center;
 }
-h3 {
-    margin-top: 0;
-    text-align: center;
-    font-family: 'Dancing Script',cursive;
-    font-size: 20vmin
-}
 p#title{
     font-family: 'Knewave';
     font-size: 10vmax
 }
 p {
     font-size: 18px;
+    color: darkblue
 }
+
 
 #main {
     overflow: hidden;
@@ -167,7 +200,9 @@ img#landpng{
     position:absolute;
     bottom:0;
     width:100%;
-    transform: translate(0, 50%);
+    opacity: 1;
+    transform: translate(0, 62%);
+    filter: blur(20px)
 
 }
 .sectionContainer{
@@ -206,6 +241,7 @@ img#landpng{
     display: flex;
     flex-direction: row;
 }
+
 
 /* ==========================================================================
    Media Queries
@@ -365,4 +401,19 @@ img#landpng{
 }
 img#pic1{
     opacity: 0
+}
+img#logo{
+    height: 80%;
+    width: 80%;
+    margin-top: 20%;
+}
+img#anim{
+    height: 100%;
+    width: 100%;
+}
+h3 {
+    margin-top: 0;
+    text-align: center;
+    font-family: 'Dancing Script',cursive;
+    font-size: 20vmin
 }

@@ -102,7 +102,7 @@ class Landing extends Component {
                             <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
                             <ProgressBar skillName='CSS' progress='70'/>
                             <ProgressBar skillName='Java-Core' progress='60'/>                            
-                            <ProgressBar skillName='CSS' progress='70'/>
+                            <ProgressBar skillName='GIT/GitHub' progress='70'/>
                             <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
                         </div>
                         </div>
@@ -111,7 +111,15 @@ class Landing extends Component {
                 </div>
                 <div className="section-3 section-horizontal">
                     <div className='sectionContainer'>
-
+                        <div>
+                            <div className='progressBarContainerWrapper'>
+                                <ProgressBar skillName='Photoshop' progress='80'/>                            
+                                <ProgressBar skillName='After Effects' progress='60'/>
+                                <ProgressBar skillName='Illustrator' progress='50'/>                            
+                                <ProgressBar skillName='Python' progress='40'/>                            
+                                <ProgressBar skillName='Machine Learning' progress='20'/>                    
+                            </div>
+                        </div>
                     </div>
                     {/* <img id='landpng' src={land}/> */}
                 </div>
@@ -123,9 +131,9 @@ class Landing extends Component {
 
         <div id="outro">
             <div className="content">
-                <img src="img/img_scrollmagic-logo.png" />
-                <h1>Global odyssey</h1>
-                <p>Coming Soon...</p>
+
+                <h3><a href='https://github.com/manjotsk' target='_blank'>GitHub</a></h3>
+                <h3><a href='https://instagram.com/manjotsinghkalsi' target='_blank'>Instagram</a></h3>
             </div>
             
         </div>

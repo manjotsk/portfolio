@@ -89,23 +89,22 @@ class Landing extends Component {
 
                 <div className="section-2 section-horizontal">
                     <div className='sectionContainer'>
-                        <p className='introPara'>I am a self taught developer.
-                             Hailing from the Golden city Amritsar, 
-                             it has been a great ride. </p>
+                        <div>
+                        
                         <div className='progressBarContainerWrapper'>
                             <ProgressBar skillName='ReactJS(Web)' progress='70'/>                            
                             <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
                             <ProgressBar skillName='NodeJS(ExpressJS)' progress='50'/>                            
-                        </div>
-                        <div className='progressBarContainerWrapper'>
                             <ProgressBar skillName='Android(Core)' progress='40'/>                            
                             <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
-                            <ProgressBar skillName='Java-Core' progress='60'/>                            
                         </div>
                         <div className='progressBarContainerWrapper'>
+                            <ProgressBar skillName='Java-Core' progress='60'/>                            
                             <ProgressBar skillName='Blender3D' progress='50'/>                    
                             <ProgressBar skillName='HTML' progress='80'/>
                             <ProgressBar skillName='CSS' progress='70'/>
+                            <ProgressBar skillName='CSS' progress='70'/>
+                        </div>
                         </div>
                     </div>
                     {/* <img id='landpng' src={land}/> */}

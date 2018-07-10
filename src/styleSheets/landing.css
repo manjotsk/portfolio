@@ -165,7 +165,7 @@ img#landpng{
 
 }
 .sectionContainer{
-    height: 80%;
+    height: 45vmax;
     width: 80%;
     /* transform: skew(20deg); */
     /* -moz-transform: skew(20deg);
@@ -187,11 +187,11 @@ img#landpng{
     text-align: justify;
     transform: skew(-5deg);
     font-family: 'Dancing Script',cursive;
-    font-size: 3vmax
+    font-size: 2vmax
 }
 .progressBarContainer{
     height: 10%;
-    width: 30%;
+    width: 15vmax;
     position:  initial;
     opacity: 1;
     flex-wrap: nowrap

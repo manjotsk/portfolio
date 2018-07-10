@@ -7,6 +7,7 @@ import land from '../assets/land.png'
 import left from '../assets/left.png'
 import right from '../assets/right.png'
 import '../styleSheets/landing.css'
+import ProgressBar from '../components/ProgressBar';
 import {TimelineMax, Linear, TweenMax, Power1, Power3, Power4, Power0, Power2} from "gsap";
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap'
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
@@ -56,9 +57,9 @@ class Landing extends Component {
         </div>
         <div id="intro">
             <div className="content">
-                <img src="img/img_scrollmagic-logo.png" />
-                <h1>Saturnalia</h1>
-                <p>North india's biggest Techno-culture fest</p>
+                <img src="img/img_scrollmagic-logo.png"/>
+                <p id='title'>manjot.in</p>
+                <p>{'</Full Stack developer>'}</p>
             </div>
             <img id='pic1' src={up}></img>
         </div>
@@ -68,26 +69,52 @@ class Landing extends Component {
             <div className="horizontal-container">
 
                 <div className="section-1 section-horizontal">
-                    <div className="content">
-                        <h2>Past things</h2>
-                        <p>Jubin</p>
+                    <div className='sectionContainer'>
+                        <p className='introPara'>I am a self taught developer.
+                             Hailing from the Golden city Amritsar, 
+                             it has been a great ride. </p>
+                             <p className='introPara'>I stand 6'3"</p>
+                        <p className='introPara'>I Love to play Basketball, Shoot Threes and some verticle shy of dunks 🙈 </p>
+                        <p className='introPara'>I love to play these Musical Instruments(priority wise)</p>
+                        <ul>
+                            <li className='introPara'>Guitar(<a href='https://youtu.be/tdN9-F_d8GM' target='_blank'>This one is covered by my</a>)</li>
+                            <li className='introPara'>Tabla</li>
+                            <li className='introPara'>Harmonium</li>
+                        </ul>
+
+
                     </div>
-                        <img id='landpng' src={land}/>
+                        {/* <img id='landpng' src={land}/> */}
                 </div>
 
                 <div className="section-2 section-horizontal">
-                    <div className="content">
-                        <h2>Present things</h2>
-                        <p>Lets go</p>
+                    <div className='sectionContainer'>
+                        <p className='introPara'>I am a self taught developer.
+                             Hailing from the Golden city Amritsar, 
+                             it has been a great ride. </p>
+                        <div className='progressBarContainerWrapper'>
+                            <ProgressBar skillName='ReactJS(Web)' progress='70'/>                            
+                            <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
+                            <ProgressBar skillName='NodeJS(ExpressJS)' progress='50'/>                            
+                        </div>
+                        <div className='progressBarContainerWrapper'>
+                            <ProgressBar skillName='Android(Core)' progress='40'/>                            
+                            <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
+                            <ProgressBar skillName='Java-Core' progress='60'/>                            
+                        </div>
+                        <div className='progressBarContainerWrapper'>
+                            <ProgressBar skillName='Blender3D' progress='50'/>                    
+                            <ProgressBar skillName='HTML' progress='80'/>
+                            <ProgressBar skillName='CSS' progress='70'/>
+                        </div>
                     </div>
-                        <img id='landpng' src={land}/>
+                    {/* <img id='landpng' src={land}/> */}
                 </div>
                 <div className="section-3 section-horizontal">
-                    <div className="content">
-                        <h2>Lets move</h2>
-                        <p>connect to us</p>
+                    <div className='sectionContainer'>
+
                     </div>
-                        <img id='landpng' src={land}/>
+                    {/* <img id='landpng' src={land}/> */}
                 </div>
                 
 

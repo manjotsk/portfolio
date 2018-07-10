@@ -113,6 +113,10 @@ h2 {
     margin-top: 0;
     text-align: center;
 }
+p#title{
+    font-family: 'Knewave';
+    font-size: 10vmax
+}
 p {
     font-size: 18px;
 }
@@ -159,6 +163,42 @@ img#landpng{
     width:100%;
     transform: translate(0, 50%);
 
+}
+.sectionContainer{
+    height: 80%;
+    width: 80%;
+    /* transform: skew(20deg); */
+    /* -moz-transform: skew(20deg);
+    -o-transform: skew(20deg); */
+    background-color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(5deg);
+    opacity: .8;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;  
+    
+}
+.introPara{
+    color: #222;
+    text-align: justify;
+    transform: skew(-5deg);
+    font-family: 'Dancing Script',cursive;
+    font-size: 3vmax
+}
+.progressBarContainer{
+    height: 10%;
+    width: 30%;
+    position:  initial;
+    opacity: 1;
+    flex-wrap: nowrap
+}
+.progressBarContainerWrapper{
+    display: flex;
+    flex-direction: row;
 }
 
 /* ==========================================================================

@@ -93,17 +93,17 @@ class Landing extends Component {
                         
                         <div className='progressBarContainerWrapper'>
                             <ProgressBar skillName='ReactJS(Web)' progress='70'/>                            
-                            <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
+                            <ProgressBar skillName='HTML' progress='80'/>
                             <ProgressBar skillName='NodeJS(ExpressJS)' progress='50'/>                            
                             <ProgressBar skillName='Android(Core)' progress='40'/>                            
-                            <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
+                            <ProgressBar skillName='Blender3D' progress='50'/>                    
                         </div>
                         <div className='progressBarContainerWrapper'>
+                            <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
+                            <ProgressBar skillName='CSS' progress='70'/>
                             <ProgressBar skillName='Java-Core' progress='60'/>                            
-                            <ProgressBar skillName='Blender3D' progress='50'/>                    
-                            <ProgressBar skillName='HTML' progress='80'/>
                             <ProgressBar skillName='CSS' progress='70'/>
-                            <ProgressBar skillName='CSS' progress='70'/>
+                            <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
                         </div>
                         </div>
                     </div>

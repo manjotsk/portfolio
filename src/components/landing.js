@@ -59,7 +59,7 @@ class Landing extends Component {
             <div className="content">
                 <img src="img/img_scrollmagic-logo.png"/>
                 <p id='title'>manjot.in</p>
-                <p>{'</Full Stack developer>'}</p>
+                <p>{'</FullStackDeveloper>'}</p>
             </div>
             <img id='pic1' src={up}></img>
         </div>
@@ -102,7 +102,7 @@ class Landing extends Component {
                             <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
                             <ProgressBar skillName='CSS' progress='70'/>
                             <ProgressBar skillName='Java-Core' progress='60'/>                            
-                            <ProgressBar skillName='GIT/GitHub' progress='70'/>
+                            <ProgressBar skillName='GIT/GitHub' progress='90'/>
                             <ProgressBar skillName='Google Compute Engine' progress='70'/>                            
                         </div>
                         </div>

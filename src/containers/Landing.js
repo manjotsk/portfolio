@@ -51,7 +51,7 @@ export default class Landing extends Component {
         horizontalMoveTl
             .to('.horizontal-container', 1, { x: '-66.6666%', ease: Power4.ease, delay: 0.1, lazy: true });
 
-        var blurScene = TweenMax.to('img.main-background1', 0.1, { 'filter': 'blur(' + Math.round(20 * 100) / 100 + ')', ease: Power4.easeInOut })
+        var blurScene = TweenMax.to('img.main-background1', 0.1, { 'filter': 'blur(' + Math.round(20 * 100) / 100 + ')', ease: Linear.easeInOut })
 
         var antiBlurScene = TweenMax.to('img#landpng', 0.1, { 'filter': 'blur(' + 0 + ')', ease: Power4.easeInOut })
 
@@ -60,6 +60,16 @@ export default class Landing extends Component {
         var removeOpacityTween = TweenMax.to('img#landpng', 0.1, { 'opacity': 0, ease: Power1.easeNone })
         var removeBlurTween = TweenMax.to('#intro-main', 0.1, { 'filter': 'blur(' + Math.round(0 * 100) / 100 + ')', ease: Power1.easeNone })
 
+        // var changeProgressState1=TweenMax.call(this.changeState)
+
+        // new ScrollMagic.Scene({
+        //     triggerElement: '#main',
+        //     triggerHook:.5,
+        //     duration: '50%'
+        // }).setTween(changeProgressState1)
+        //     // .addIndicators()
+        //     .addTo(controller);
+            
         new ScrollMagic.Scene({
             triggerElement: '#outro.one',
             triggerHook: 1,
@@ -104,7 +114,7 @@ export default class Landing extends Component {
 
         new ScrollMagic.Scene({
             triggerElement: '#main',
-            triggerHook: 0.9,
+            triggerHook: 1,
             duration: '100%'
         })
             .setTween(blurScene)
@@ -123,8 +133,8 @@ export default class Landing extends Component {
         // var imageMover= new ScrollMagic.Scene({
         //     triggerElement:'#pic1'
         // })
-
     }
+    
 
     render() {
         return <div id="intro1">
@@ -135,10 +145,10 @@ export default class Landing extends Component {
                 <img className='main-background2' src={background} onLoad={() => this.handleAssetLoad6()} />
             </div>
             <div id="intro">
-                <p id='title'>manjot.in</p>
             <div className="content">
+            <p id='title'><code>manjot.in</code></p>
                 {/* <img src="img/img_scrollmagic-logo.png"/> */}
-                <p>{'</FullStackDeveloper>'}</p>
+                <p><code>{'<FullStackDeveloper/>'}</code></p>
             </div>
             <img id='pic1' src={up}></img>
             </div>
@@ -151,15 +161,20 @@ export default class Landing extends Component {
                     <div className='sectionContainer'>
                         <p className='introPara'>I am a self taught developer.
                              Hailing from the Golden city Amritsar, 
-                             it has been a great ride. </p>
-                             <p className='introPara'>I stand 6'3"</p>
-                        <p className='introPara'>I Love to play Basketball, Shoot Threes and some verticle shy of dunks 🙈 </p>
+                             it has been a great ride. <br>
+                             </br>I stand 6'3"<br>
+                             </br>I Love to play Basketball, Shoot Threes and some verticle shy of dunks 🙈 </p>
                         <p className='introPara'>I love to play these Musical Instruments(priority wise)</p>
                         <ul>
                             <li className='introPara'>Guitar(<a href='https://youtu.be/tdN9-F_d8GM' target='_blank'>This one is covered by my</a>)</li>
                             <li className='introPara'>Tabla</li>
                             <li className='introPara'>Harmonium</li>
                         </ul>
+                        <p className='introPara'>Metric CGPA 9.6<br>
+                        </br>Senior Secondary Score 82% - Non medical Sciences<br>
+                        </br>Persuing <strong>BE(CSE)+MBA</strong> From Thapar University, Patiala<br>
+                        </br>Current CGPA:- 7</p>
+                        
 
 
                     </div>
@@ -168,21 +183,26 @@ export default class Landing extends Component {
 
                 <div className="section-2 section-horizontal">
                     <div className='sectionContainer'>
-                        <div>
+                    <p style={{textAlign:'center',fontSize:'2vmax'}}>
+                        <code>
+                            Soft Skills
+                        </code>
+                    </p>
+                        <div style={{marginTop:'8vmax'}}>
                         
                         <div className='progressBarContainerWrapper'>
-                            <ProgressBar skillName='ReactJS(Web)' progress='70'/>                            
-                            <ProgressBar skillName='HTML' progress='80'/>
-                            <ProgressBar skillName='NodeJS(ExpressJS)' progress='50'/>                            
-                            <ProgressBar skillName='Android(Core)' progress='40'/>                            
+                            <ProgressBar skillName='ReactJS (Web)' progress='80'/>                            
+                            <ProgressBar skillName='</HTML>' progress='80'/>
+                            <ProgressBar skillName='NodeJS (ExpressJS)' progress='60'/>                            
+                            <ProgressBar skillName='Android (Core)' progress='50'/>                            
                             <ProgressBar skillName='Blender3D' progress='50'/>                    
                         </div>
-                        <div className='progressBarContainerWrapper'>
-                            <ProgressBar skillName='ReactJS(Native)' progress='75'/>                            
-                            <ProgressBar skillName='CSS' progress='70'/>
-                            <ProgressBar skillName='Java-Core' progress='60'/>                            
+                        <div className='progressBarContainerWrapper2'>
+                            <ProgressBar skillName='ReactJS (Native)' progress='85'/>                            
+                            <ProgressBar skillName='CSS' progress='75'/>
+                            <ProgressBar skillName='Java' progress='60'/>                            
                             <ProgressBar skillName='GIT/GitHub' progress='90'/>
-                            <ProgressBar skillName='G-Compute Engine' progress='70'/>                            
+                            <ProgressBar skillName='Compute Engine' progress='90'/>                            
                         </div>
                         </div>
                     </div>
@@ -190,13 +210,23 @@ export default class Landing extends Component {
                 </div>
                 <div className="section-3 section-horizontal">
                     <div className='sectionContainer'>
-                        <div>
+                    <p style={{textAlign:'center'}}>
+                        Soft Skills
+                    </p>
+                        <div style={{marginTop:'8vmax'}}>
                             <div className='progressBarContainerWrapper'>
                                 <ProgressBar skillName='Photoshop' progress='80'/>                            
                                 <ProgressBar skillName='After Effects' progress='60'/>
                                 <ProgressBar skillName='Illustrator' progress='50'/>                            
                                 <ProgressBar skillName='Python' progress='40'/>                            
                                 <ProgressBar skillName='Machine Learning' progress='20'/>                    
+                            </div>
+                            <div className='progressBarContainerWrapper2'>
+                                <ProgressBar skillName='SQL' progress='70'/>                            
+                                <ProgressBar skillName='Scroll Magic' progress='40'/>                            
+                                <ProgressBar skillName='C++' progress='60'/>                            
+                                <ProgressBar skillName='Premier' progress='50'/>                            
+                                <ProgressBar skillName='☕' progress='100'/>                            
                             </div>
                         </div>
                     </div>
@@ -210,13 +240,13 @@ export default class Landing extends Component {
 
             <div id="outro" className='one'>
                 <div className="content">
-
-                    <h3><a href='https://github.com/manjotsk' target='_blank'>GitHub</a></h3>
-                    <h3><a href='https://instagram.com/manjotsinghkalsi' target='_blank'>Instagram</a></h3>
+                    <p style={{fontFamily:'Knewave',fontSize:'5vmax'}}><a className='outroP' href='https://github.com/manjotsk' target='_blank'>GitHub</a></p>
+                    <p style={{fontFamily:'Knewave',fontSize:'5vmax'}}><a className='outroP' href='https://instagram.com/manjotsinghkalsi' target='_blank'>Instagram</a></p>
+                    <p style={{fontFamily:'Knewave',fontSize:'3vmax'}}><a className='outroP' href="mailto:manjot.kalsi@simbaquartz.com?Subject=Hi%20Manjot%20" target="_top">Email Me</a>
+                    </p>
                 </div>
             </div>
 
         </div>
     }
 }
-

@@ -157,9 +157,12 @@ p#title{
 }
 p {
     font-size: 18px;
-    color: darkblue
+    color: rgb(177, 177, 177)
 }
-
+.outroP{
+    color: wheat;
+    text-decoration: none;
+}
 
 #main {
     overflow: hidden;
@@ -229,18 +232,27 @@ img#landpng{
     text-align: justify;
     transform: skew(-5deg);
     font-family: 'Dancing Script',cursive;
-    font-size: 2vmax
+    font-size: 1.8vmax
 }
 .progressBarContainer{
     height: 10%;
     width: 15vmax;
     position:  initial;
     opacity: 1;
-    flex-wrap: nowrap
+    
 }
 .progressBarContainerWrapper{
     display: flex;
     flex-direction: row;
+    align-content: center;
+    overflow: hidden
+}
+.progressBarContainerWrapper2{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    overflow: hidden;
+    margin-top: 2vmax;
 }
 
 
